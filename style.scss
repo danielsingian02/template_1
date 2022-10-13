@@ -662,3 +662,27 @@ footer {
         }
     }
 }
+
+.container {
+    padding: 1rem;
+
+    & .media {
+        border: 2px solid black;
+        border-radius: 12px;
+        color: black;
+
+        & .media-content {
+            margin: 1.5em;
+        }
+
+        & a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:hover{
+            border-color: $green;
+            color: $green;
+        }
+    }
+}

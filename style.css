@@ -595,4 +595,24 @@ footer > * {
 }
 .site-content-search article:hover a {
   color: inherit;
+}
+
+.container {
+  padding: 1rem;
+}
+.container .media {
+  border: 2px solid black;
+  border-radius: 12px;
+  color: black;
+}
+.container .media .media-content {
+  margin: 1.5em;
+}
+.container .media a {
+  text-decoration: none;
+  color: inherit;
+}
+.container .media:hover {
+  border-color: #036F33;
+  color: #036F33;
 }/*# sourceMappingURL=style.css.map */
