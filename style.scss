@@ -108,11 +108,12 @@ $green: #036F33;
 
 .template_header_menu {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .menu {
-    margin-right: auto;
-    
+    margin-left: auto;    
 }
 
 .menu > ul {
@@ -154,8 +155,6 @@ $green: #036F33;
             color: white;
         }
     }
-
-
 }
 
 .search-bar {
