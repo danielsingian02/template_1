@@ -608,6 +608,16 @@ footer > * {
 .container .media .media-content {
   margin: 1.5em;
 }
+.container .media .media-content .read-more {
+  background-color: #036F33;
+  padding: 0.7rem 1rem;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
 .container .media a {
   text-decoration: none;
   color: inherit;
@@ -615,4 +625,9 @@ footer > * {
 .container .media:hover {
   border-color: #036F33;
   color: #036F33;
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

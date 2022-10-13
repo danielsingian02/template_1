@@ -673,6 +673,15 @@ footer {
 
         & .media-content {
             margin: 1.5em;
+
+            & .read-more {
+                background-color: $green;
+                padding: 0.7rem 1rem;
+                color: white;
+                width: fit-content;
+                margin-top: 1rem;
+                border-radius: 12px;
+            }
         }
 
         & a {
@@ -684,5 +693,9 @@ footer {
             border-color: $green;
             color: $green;
         }
+    }
+
+    @media #{ $media_mobile } {
+        padding: 0;
     }
 }
