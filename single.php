@@ -30,7 +30,7 @@ get_header();
 
 			<div class="content">
 				<?php
-					comments_template();
+					esc_html( comments_template() );
 				?>
 			</div>
 			

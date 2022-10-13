@@ -625,8 +625,6 @@ footer {
         border: 2px solid black;
         border-radius: 12px;
         padding: 1.5rem;
-        min-height: 100%;
-        max-height: 15rem;
         overflow: hidden;
         
         & a {
@@ -636,6 +634,13 @@ footer {
 
         & + article {
             margin-top: 1rem;
+        }
+
+        & .content {
+            margin: 1rem;
+            overflow: hidden;
+            min-height: 100%;
+            max-height: 15rem;
         }
 
         & .entry-header-search {

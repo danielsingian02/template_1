@@ -23,16 +23,17 @@ get_header(); ?>
 						<article <?php post_class(); ?>>
 							<a href="<?php echo esc_url( get_permalink() ); ?>" target="_blank" >
 
-								<?php the_post_thumbnail( 'my-custom-image-size' ); ?>
+								<div class="content">
+									<?php the_post_thumbnail( 'my-custom-image-size' ); ?>
 
-								<header class="entry-header-search">
-									<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-								</header><!-- .entry-header -->
+									<header class="entry-header-search">
+										<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+									</header><!-- .entry-header -->
 
-								<div class="entry-content-search">
-									<?php the_content( esc_html__( 'Continue reading &rarr;', 'my-custom-theme' ) ); ?>
-								</div><!-- .entry-content -->
-
+									<div class="entry-content-search">
+										<?php the_content( esc_html__( 'Continue reading &rarr;', 'my-custom-theme' ) ); ?>
+									</div><!-- .entry-content -->
+								</div>
 							</a>
 						</article><!-- #post-## -->
 
