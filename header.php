@@ -15,10 +15,10 @@
 		<div class="brand">
 			<a href="<?php bloginfo( 'url' ); ?>" class="navbar-brand">
 				<?php
-				if ( has_site_icon() ) {
+				if ( ! has_site_icon() ) {
 					echo "<img src=' " . esc_url( get_site_icon_url( 150 ) ) . "' class='img-fluid site-icon' alt='' >";
 				} else {
-					echo '<h1>' . get_bloginfo( 'name' ) . '</h1>';
+					echo '<h1 class="site-name">' . get_bloginfo( 'name' ) . '</h1>';
 				}
 				?>
 			</a>

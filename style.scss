@@ -42,6 +42,24 @@ $green: #036F33;
     }
 }
 
+.navbar-brand {
+    white-space: normal;
+    font-size: 1.8rem;
+    width: 100%;
+
+    & > h1 {
+        font-size: inherit;
+    }
+
+    @media #{ $media_tablet } {
+        font-size: 1.3rem;
+    }
+
+    @media #{ $media_mobile } {
+        font-size: 1rem;
+    }
+}
+
 .brand {
     display: flex;
     flex-basis: 20%;
@@ -97,8 +115,7 @@ $green: #036F33;
         flex-direction: column;
         margin-left: auto;
         
-    }
-    
+    }    
 }
 
 .site-icon {
@@ -113,7 +130,12 @@ $green: #036F33;
 }
 
 .menu {
-    margin-left: auto;    
+    width: 100%;
+    margin-left: auto;
+
+    @media #{ $media_tablet } {
+        
+    }
 }
 
 .menu > ul {
@@ -445,9 +467,7 @@ footer {
             & > a {
                 color: inherit;
             }
-        }
-    
-    
+        }    
     }   
 }
 

@@ -24,6 +24,25 @@ Author URI: iPhiTech IT Digital Solutions Corporation
   }
 }
 
+.navbar-brand {
+  white-space: normal;
+  font-size: 1.8rem;
+  width: 100%;
+}
+.navbar-brand > h1 {
+  font-size: inherit;
+}
+@media only screen and (max-width: 767px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
 .brand {
   display: flex;
   flex-basis: 20%;
@@ -94,9 +113,9 @@ Author URI: iPhiTech IT Digital Solutions Corporation
 }
 
 .menu {
+  width: 100%;
   margin-left: auto;
 }
-
 .menu > ul {
   display: flex;
   flex-direction: row;
