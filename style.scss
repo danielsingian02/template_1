@@ -534,6 +534,10 @@ footer {
         padding: 2rem;
         border-radius: 12px;
 
+        & img {
+            width: 100%;
+        }
+
         @media #{ $media_tablet } {
             width: 100%;
             padding: 1rem;
