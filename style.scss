@@ -170,7 +170,7 @@ $green: #036F33;
         text-transform: uppercase;
     }
 
-    &  + .current_page_item, &:hover {
+    &.current_page_item, &:hover {
         background-color: $green;
         
         & > a {
@@ -461,7 +461,7 @@ footer {
             text-transform: uppercase;
         }
     
-        & + .current_page_item, &:hover {
+        &.current_page_item, &:hover {
             background-color: transparent !important;
             
             & > a {

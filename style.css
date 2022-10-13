@@ -148,10 +148,10 @@ Author URI: iPhiTech IT Digital Solutions Corporation
   text-decoration: none;
   text-transform: uppercase;
 }
-.page_item + .current_page_item, .page_item:hover {
+.page_item.current_page_item, .page_item:hover {
   background-color: #036F33;
 }
-.page_item + .current_page_item > a, .page_item:hover > a {
+.page_item.current_page_item > a, .page_item:hover > a {
   color: white;
 }
 
@@ -433,10 +433,10 @@ footer > * {
   text-decoration: none;
   text-transform: uppercase;
 }
-.footer-navlinks .page_item + .current_page_item, .footer-navlinks .page_item:hover {
+.footer-navlinks .page_item.current_page_item, .footer-navlinks .page_item:hover {
   background-color: transparent !important;
 }
-.footer-navlinks .page_item + .current_page_item > a, .footer-navlinks .page_item:hover > a {
+.footer-navlinks .page_item.current_page_item > a, .footer-navlinks .page_item:hover > a {
   color: inherit;
 }
 
