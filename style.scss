@@ -33,7 +33,7 @@ $green: #036F33;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: #036F33;
+    color: $green;
 }
 
 .header, .banner {
@@ -579,7 +579,7 @@ footer {
         // User comment container
         & .byuser {
             // display: flex;
-            width: fit-content;
+            width: 100%;
 
             & > .comment-author {
                 // display: flex;
@@ -587,13 +587,70 @@ footer {
             }
 
             & + .byuser {
+                border-top: 2px solid $green;
                 margin-top: 1rem;
+                padding-top: 1rem;
             }
         }
 
         & img {
             max-height: 4rem;
             max-width: 4rem;
+        }
+    }
+}
+
+// Search page
+.site-content-search {
+    background-color: $green;
+    color: black;
+
+    & > .search-results {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: inherit;
+        padding: 2rem;
+
+        @media #{ $media_tablet } {
+            padding: 1rem;
+        }
+    }
+
+    & article {
+        border: 2px solid black;
+        border-radius: 12px;
+        padding: 1.5rem;
+        min-height: 100%;
+        max-height: 15rem;
+        overflow: hidden;
+        
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+
+        & + article {
+            margin-top: 1rem;
+        }
+
+        & .entry-header-search {
+            font-weight: 700;
+        }
+
+        & .entry-content-search {
+            white-space: nowrap;
+            word-break: break-all;
+            overflow: hidden;
+        }
+
+        &:hover {
+            border-color: $green;
+            color: $green;
+
+            & a {
+                color: inherit;
+            }
         }
     }
 }
